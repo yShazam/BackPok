@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Pokemons</h1>
+<%= link_to "Pokebola", pokebolas_path %>
+<%= link_to "Treinadores", treinadors_path %>
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Nome</th>
+      <th>Tipo</th>
+      <th>Raridade</th>
+      <th>Treinador</th>
+      <th>Fraqueza</th>
+      <th>Habilidade</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pokemons.each do |pokemon| %>
+      <tr>
+        <td><%= pokemon.id %></td>
+        <td><%= pokemon.nome %></td>
+        <td><%= pokemon.tipo %></td>
+        <td><%= pokemon.raridade %></td>
+        <td><%= pokemon.treinador.nome %></td>
+        <td><%= pokemon.fraqueza %></td>
+        <td><%= pokemon.habilidade %></td>
+        <td><%= link_to 'Show', pokemon %></td>
+        <td><%= link_to 'Edit', edit_pokemon_path(pokemon) %></td>
+        <td><%= link_to 'Destroy', pokemon, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pokemon', new_pokemon_path %>

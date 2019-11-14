@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @pokebola.nome %>
+</p>
+
+<p>
+  <strong>Caracteristica:</strong>
+  <%= @pokebola.caracteristica %>
+</p>
+
+<%= link_to 'Edit', edit_pokebola_path(@pokebola) %> |
+<%= link_to 'Back', pokebolas_path %>

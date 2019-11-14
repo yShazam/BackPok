@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  tipo: MyString
+  raridade: MyString
+  treinador: MyString
+  fraqueza: MyString
+  habilidade: MyString
+
+two:
+  nome: MyString
+  tipo: MyString
+  raridade: MyString
+  treinador: MyString
+  fraqueza: MyString
+  habilidade: MyString

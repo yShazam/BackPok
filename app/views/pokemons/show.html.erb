@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @pokemon.nome %>
+</p>
+
+<p>
+  <strong>Tipo:</strong>
+  <%= @pokemon.tipo %>
+</p>
+
+<p>
+  <strong>Raridade:</strong>
+  <%= @pokemon.raridade %>
+</p>
+
+<p>
+  <strong>Treinador:</strong>
+  <%= @pokemon.treinador %>
+</p>
+
+<p>
+  <strong>Fraqueza:</strong>
+  <%= @pokemon.fraqueza %>
+</p>
+
+<p>
+  <strong>Habilidade:</strong>
+  <%= @pokemon.habilidade %>
+</p>
+
+<%= link_to 'Edit', edit_pokemon_path(@pokemon) %> |
+<%= link_to 'Back', pokemons_path %>

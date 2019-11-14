@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Pokebolas</h1>
+<%= link_to "Treinadores", treinadors_path %>
+<%= link_to "Pokemons", pokemons_path %>
+<table class=table1>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Caracteristica</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pokebolas.each do |pokebola| %>
+      <tr>
+                <td><%= pokebola.nome %></td>
+        <td><%= pokebola.caracteristica %></td>
+        <td><%= link_to 'Show', pokebola %></td>
+        <td><%= link_to 'Edit', edit_pokebola_path(pokebola) %></td>
+        <td><%= link_to 'Destroy', pokebola, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pokebola', new_pokebola_path %>
+

@@ -1,0 +1,37 @@
+<%= form_for(treinador) do |f| %>
+  <% if treinador.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(treinador.errors.count, "error") %> prohibited this treinador from being saved:</h2>
+
+      <ul>
+      <% treinador.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nome %>
+    <%= f.text_field :nome %>
+  </div>
+
+  <div class="field">
+    <%= f.label :idade %>
+    <%= f.number_field :idade %>
+  </div>
+
+  <div class="field">
+    <%= f.label :sexo %>
+    <%= f.text_field :sexo %>
+  </div>
+
+  <div class="field">
+    <%= f.label :especialidade %>
+    <%= f.text_field :especialidade %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+<%= link_to image_tag ("Pokebola.jpg"), pokemons_path %>
+<h1>Treinadors</h1>
+<%= link_to "Pokebola", pokebolas_path %>
+<%= link_to "Pokemons", pokemons_path %>
+<table class=table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nome</th>
+      <th>Idade</th>
+      <th>Sexo</th>
+      <th>Especialidade</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @treinadors.each do |treinador| %>
+      <tr>
+        <td><%= treinador.id %></td>
+        <td><%= treinador.nome %></td>
+        <td><%= treinador.idade %></td>
+        <td><%= treinador.sexo %></td>
+        <td><%= treinador.especialidade %></td>
+        <td><%= link_to 'Show', treinador %></td>
+        <td><%= link_to 'Edit', edit_treinador_path(treinador) %></td>
+        <td><%= link_to 'Destroy', treinador, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Treinador', new_treinador_path %>
