@@ -35,12 +35,17 @@ a {
 
 th {
   padding-bottom: 5px;
+  border: 1px;
+  color: #FFCB05;
+  background-color:#3860AA;
 }
 
 td {
   padding-bottom: 7px;
   padding-left: 5px;
   padding-right: 5px;
+  border: 2px outset;
+  border-color: #3860AA;
 }
 
 div {
@@ -87,3 +92,32 @@ div {
 label {
   display: block;
 }
+
+table {
+  background-color: #FFCB05;
+  border: 7px solid;
+  padding: 2px;
+ border-color:#3860AA;
+ margin: 10px;
+}
+
+h1 {text-align:left;
+ font-weight: bold;
+ padding: 5px 15px 15px 15px;
+ color: #FFCB05;
+ margin: -7px;
+}
+
+ ul li {
+    font-size: 12px;
+    list-style: square; border-radius: 30px;
+  }
+  
+  label {color:#fff;}
+  
+  
+ 
+  
+
+
+
