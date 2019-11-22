@@ -22,7 +22,11 @@
         <td><%= treinador.nome %></td>
         <td><%= treinador.idade %></td>
         <td><%= treinador.sexo %></td>
-        <td><%= treinador.especialidade %></td>
+        
+        <td><div class="Especialidade <%= treinador.especialidade %>"><%= treinador.especialidade %></div></td>
+        
+         
+        
         <td><%= link_to 'Show', treinador %></td>
         <td><%= link_to 'Edit', edit_treinador_path(treinador) %></td>
         <td><%= link_to 'Destroy', treinador, method: :delete, data: { confirm: 'Are you sure?' } %></td>

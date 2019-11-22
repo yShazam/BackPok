@@ -1,0 +1,31 @@
+
+# puts"Digite o seu nome"
+# name= gets.chomp
+# puts "Welcome, #{name}"
+
+#puts "Sua idade"
+#idade = gets.chomp.to_i
+#if idade > 18
+    #puts"Voce pode beber"
+#else
+    #puts"Voce não pode beber"
+#end
+
+
+puts "Sua idade"
+idade = gets.chomp.to_i
+if idade >=18
+    puts"Voce e maior de idade"
+    puts"Voce tem habilitação?"
+    cnh = gets.chomp
+    if cnh == "sim"
+        puts"voce pode dirigir"
+        puts "Olá vocee disse que sua idade é #{idade} e respondeu #{cnh} logo você pode dirigir"
+    else if cnh == "nao"
+        puts"Voce não pode dirigir"
+    else
+        puts"ta errado o que voce digitou"
+        
+    end
+    end
+end

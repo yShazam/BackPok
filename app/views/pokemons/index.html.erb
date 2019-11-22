@@ -24,7 +24,9 @@
       <tr>
         <td><%= pokemon.id %></td>
         <td><%= pokemon.nome %></td>
-        <td><%= pokemon.tipo %></td>
+        
+        <td><div class="Tipo <%= pokemon.tipo %>"><%= pokemon.tipo %></div></td>
+        
         <td><%= pokemon.raridade %></td>
         <td><%= pokemon.treinador.nome %></td>
         <td><%= pokemon.fraqueza %></td>

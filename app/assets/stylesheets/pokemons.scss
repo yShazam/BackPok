@@ -13,3 +13,49 @@ h1 {
     text-align:center; 
     margin-top:100px;
 }
+
+.Tipo{
+  //background-color: #3860AA; /* Green */
+  border: none;
+  padding: 2px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius:5px;
+}
+
+.Fogo{
+    background-color: #fd7d24;;
+    color: white;
+}
+
+.Agua{
+    background-color: #4592c4;
+    color: white;
+}
+
+.Fada{
+    background-color: pink;
+    color: white;
+}
+
+.Inseto{
+    background-color: #729f3f;
+    color: white;
+}
+
+.Veneno{
+    background-color: #b97fc9;
+    color: white;
+}
+
+.Aco{
+    background-color: #9eb7b8;
+    color: white;
+}
+
+.Normal{
+    background-color: #a4acaf;
+    color: white;
+}
